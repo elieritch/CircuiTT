@@ -74,9 +74,9 @@ there are two environment files "pysam_env" and "pysamstats_env".
 these environments need to be created. Then supplemental files too large for github will need to be downloaded to the appropriate paths.
 ```bash
 git clone https://github.com/elieritch/CircuiTT.git;
-conda create -n <NAME> --file pysam_env
-conda create -n <NAME> --file pysamstats_env
-bash /path/to/CircuiTT/install.bash
+conda create -n <NAME> --file pysam_env;
+conda create -n <NAME> --file pysamstats_env;
+bash /path/to/CircuiTT/install.bash;
 ```
 
 then put the names you have chosen into the appropriate values in the config.txt
