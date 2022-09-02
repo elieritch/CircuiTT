@@ -1,0 +1,49 @@
+#!/bin/bash
+# =============================================================================
+## PATHS TO PIPELINE SCRIPTS
+# =============================================================================
+script_dir="/PATH/TO/THIS/DIRECTORY"
+
+# =============================================================================
+## PATHS TO SCRIPTS/BINARIES
+# =============================================================================
+#
+#BWA Version: 0.7.15-r1140
+bwa_path="/PATH/TO/DEPENDENCY_DIRECTORY/baw"
+#Samtools Version: 1.7 (using htslib 1.7)
+samtools_path="/PATH/TO/DEPENDENCY_DIRECTORY/samtools"
+#Picard Version: 2.18.0
+picard_path="/PATH/TO/DEPENDENCY_DIRECTORY/picard.jar"
+bedtools_path="/PATH/TO/DEPENDENCY_DIRECTORY/bedtools"
+vardict_java_path="/PATH/TO/DEPENDENCY_DIRECTORY/vardict-java.jar"
+vardict_script_dir="/PATH/TO/DEPENDENCY_DIRECTORY"
+annovar_path="/PATH/TO/DEPENDENCY_DIRECTORY/table_annovar.pl"
+annovar_humandb="/groups/wyattgrp/software/annovar/annovar/humandb"
+
+# =============================================================================
+## PATHS TO REFERENCE FILES
+# =============================================================================
+
+backgrounderror="/PATH/TO/SUPP_FILES/ALLCHR_ERRORRATES.TXT"
+targetbed="/PATH/TO/SUPP_FILES/grch38genes4intersect.bed"
+#gcbed is just the gc content of genomic bins of size N
+gcbed="/PATH/TO/SUPP_FILES/grch38.gc50Base.bed"
+ref="/PATH/TO/SUPP_FILES/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa"
+#ref needs to be indexed for samtools as well as bwa
+
+# =============================================================================
+## CONDA VARIABLES
+# =============================================================================
+
+conda_profile_path="/home/$(whoami)/anaconda3/etc/profile.d/conda.sh"
+pysamstats_env_name=pysamstats
+rust_env_name=rust
+conda_pysam_env=samspider
+
+# =============================================================================
+## MISC
+# =============================================================================
+threads=60
+#min_depth variable tnvstat and downstream analysis will only include 
+#positions greater than $min_depth
+min_depth=30

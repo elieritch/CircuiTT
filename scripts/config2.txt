@@ -1,0 +1,48 @@
+# =============================================================================
+## PATHS TO PIPELINE SCRIPTS
+# =============================================================================
+script_dir="/groups/wyattgrp/eritch/projects/gene_panel_pipeline/scripts"
+
+# =============================================================================
+## PATHS TO SCRIPTS/BINARIES
+# =============================================================================
+
+#BWA Version: 0.7.15-r1140
+bwa_path="/home/$(whoami)/anaconda3/envs/pysamstats/bin/bwa"
+#Samtools Version: 1.7 (using htslib 1.7)
+samtools_path="/home/$(whoami)/anaconda3/envs/pysamstats/bin/samtools"
+#Picard Version: 2.18.0
+picard_path="/home/$(whoami)/anaconda3/pkgs/picard-2.18.0-py36_0/share/picard-2.18.0-0/picard.jar"
+bedtools_path="/groups/wyattgrp/bin/bedtools"
+vardict_java_path="/home/eritch/software/bcbio/anaconda/share/vardict-java-1.5.1-0/bin/vardict-java"
+vardict_script_dir="/groups/wyattgrp/software/vardict/VarDict"
+annovar_path="/groups/wyattgrp/software/annovar/annovar/table_annovar.pl"
+annovar_humandb="/groups/wyattgrp/software/annovar/annovar/humandb"
+
+# =============================================================================
+## PATHS TO REFERENCE FILES
+# =============================================================================
+
+backgrounderror="/groups/wyattgrp/reference/bg/73gp_snv_18may18/allchr_errorrates.txt"
+targetbed="/groups/wyattgrp/reference/target/72gene_panel/grch38genes4intersect.bed"
+#gcbed is just the gc content of genomic bins of size N
+gcbed="/groups/wyattgrp/reference/grch38/grch38.gc50Base.bed"
+ref="/groups/wyattgrp/reference/grch38/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa"
+#ref needs to be indexed for samtools as well as bwa
+
+# =============================================================================
+## CONDA VARIABLES
+# =============================================================================
+
+conda_profile_path="/home/$(whoami)/anaconda3/etc/profile.d/conda.sh"
+pysamstats_env_name=pysamstats
+rust_env_name=rust
+conda_pysam_env=samspider
+
+# =============================================================================
+## MISC
+# =============================================================================
+threads=60
+#min_depth variable tnvstat and downstream analysis will only include 
+#positions greater than $min_depth
+min_depth=30

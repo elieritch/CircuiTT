@@ -1,0 +1,43 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+@EXPLICIT
+https://repo.continuum.io/pkgs/main/linux-64/ca-certificates-2017.08.26-h1d4fec5_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/intel-openmp-2018.0.0-8.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libgcc-ng-7.2.0-hdf63c60_3.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libgfortran-ng-7.2.0-hdf63c60_3.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libstdcxx-ng-7.2.0-hdf63c60_3.tar.bz2
+https://repo.continuum.io/pkgs/free/linux-64/openjdk-8.0.121-1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/bzip2-1.0.6-h9a117a8_4.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libffi-3.2.1-hd88cf55_4.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libgcc-7.2.0-h69d50b8_2.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/lzo-2.10-h49e0be7_2.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/mkl-2018.0.2-1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/ncurses-6.0-h9df7e31_2.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/openssl-1.0.2n-hb7f436b_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/tk-8.6.7-hc745277_3.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/xz-5.2.3-h55aa19d_2.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/zlib-1.2.11-ha838bed_2.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/bwa-0.7.15-1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/hdf5-1.10.1-h9caa474_1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libedit-3.1-heed3624_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libssh2-1.8.0-h9cfc8f7_4.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/readline-7.0-ha6073c6_4.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/libcurl-7.58.0-h1ad7b7a_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/sqlite-3.22.0-h1bed415_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/curl-7.58.0-h84994c4_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/python-3.6.4-hc3d631a_3.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/bcftools-1.7-0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/certifi-2018.1.18-py36_0.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/htslib-1.7-0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/numpy-1.14.2-py36hdbf6ddf_0.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/picard-2.18.0-py36_0.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/samtools-1.7-1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/six-1.11.0-py36h372c433_1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/numexpr-2.6.4-py36hc4a3f9a_0.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/pysam-0.14.1-py36_htslib1.7_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/setuptools-38.5.1-py36_0.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/pytables-3.4.2-py36h3b5282a_2.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/wheel-0.30.0-py36hfd4bba0_1.tar.bz2
+https://repo.continuum.io/pkgs/main/linux-64/pip-9.0.1-py36_5.tar.bz2
+https://conda.anaconda.org/bioconda/linux-64/pysamstats-1.0.1-py36_0.tar.bz2
