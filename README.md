@@ -69,13 +69,16 @@ The variant_intermediate_files is kept so as to allow for further examination of
 Any germline variant caller will do. Originally I wrote my own but in the current version we are using vardict-java and the variants are annotated with annovar. A subdirectory called "vardict" contains intermediate files. I also do tumor-normal somatic variant calling with vardict which stays in that subdirectory and can be used for comparison to the CircuiTT output. The germline variant calls after filtering are moved to the main output directory and are called `${normal_sample}_germline.tsv`.
 
 ## INSTALLATION and EXECUTION
-
+Download the repo.
 there are two environment files "pysam_env" and "pysamstats_env". 
-these environments need to be created 
+these environments need to be created. Then supplemental files too large for github will need to be downloaded to the appropriate paths.
 ```bash
+git clone https://github.com/elieritch/CircuiTT.git;
 conda create -n <NAME> --file pysam_env
 conda create -n <NAME> --file pysamstats_env
+bash /path/to/CircuiTT/install.bash
 ```
+
 then put the names you have chosen into the appropriate values in the config.txt
 
 The conda command  will also need to be available within subshells that dont necessarily have users environment variables (ie within parallel), this is why the conda profile profile.d/conda.sh needs to be sourced as well. This script comes with every installation of conda and just exports the conda variables and appends them to the $PATH.
