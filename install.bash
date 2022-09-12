@@ -1,4 +1,5 @@
 #!/bin/bash
+# run this script from the CircuiTT directory
 
 root_dir=$(dirname "$0");
 cd ${root_dir}
